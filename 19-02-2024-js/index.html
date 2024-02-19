@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-02-2024-js</title>
+    <style>
+        .container{
+            width: 1170px;
+            margin: auto;
+        }
+        .mb-10{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Phép tính tổng</h1>
+        <form>
+            <div class="mb-10">
+                <label for="so_a">Số a</label><br>
+                <input type="number" id="so_a">
+            </div>
+            <div class="mb-10">
+                <label for="so_b">Số b</label><br>
+                <input type="number" id="so_b">
+            </div>
+            <div class="mb-10">
+                <button type="button" onclick="ketqua()">Kết quả</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <h1 id="ketqua"></h1> -->
+
+    <script>
+
+        function ketqua() {
+            const so_a = document.getElementById('so_a').value;
+            const so_b = document.getElementById('so_b').value;
+
+            const tinhtong = parseInt(so_a) + parseInt(so_b);
+            // alert(typeof parseInt(so_a));
+            alert(tinhtong);
+        }
+
+        // Những cách mà xuất dữ liệu ra kiểm tra
+
+        // console.log(1)
+        // alert(1)
+        // document.getElementById('ketqua').innerHTML = 'hello';
+        // document.write('hello')
+
+        // Khai báo chung trong javascript (js)
+        // <khai báo biến> <tên biến> = <kiểu dữ liệu>;
+
+        // <khai báo biến> : var, let, const
+        // <tên biến> : Tiếng Việt (không dấu, không cách), Tiếng Anh (không cách), 
+        // không đặt số ở đầu, phù hợp với giá trị truyền vô 
+
+        // <kiểu dữ liệu> : string, number, boolean, array, object, undefined
+
+        // String: "", ''
+        // const fullname = 'Đinh Dương Minh Phương';
+        // console.log(typeof fullname);
+
+        // Number
+        // const so = 5;
+        // console.log(typeof so);
+
+        // const so = 5;
+        // const so = 6;
+
+        // let so = 5;
+        // so = 6;
+
+        // console.log(so);
+        // const so_a = 5;
+        // .
+        // .
+        // .
+        // var so_a = 8;
+        // console.log(so_a);
+
+        // boolean: true và false
+        // const ketqua = false;
+        // console.log(ketqua);
+
+        // a = 8; // khai báo biến mặc định là var
+        // console.log(a);
+
+        // array
+        // const danhsachtraicay = ["xoài", "cam", "ổi"]; // index : 0 1 2
+
+        // console.log(danhsachtraicay);
+        // console.log(danhsachtraicay[1]);
+
+        // const danhsachsotunhien = [1,8,3,2,5,4,0,565];
+
+        // object: {key: value}
+        // const thongtinsinhvien = { 
+        //     hoTen: 'Nguyễn Văn A', // key: value (string)
+        //     tuoi: 20, // key: value (number)
+        //     diemTrungBinh: 7.7 // key: value (number)
+        // };
+
+        // console.log(thongtinsinhvien);
+        // console.log(thongtinsinhvien.diemTrungBinh);
+
+        // const danhsachsinhvien = [
+        //     { 
+        //         hoTen: 'Nguyễn Văn A',
+        //         tuoi: 20,
+        //         diemTrungBinh: 7.7
+        //     },
+        //     { 
+        //         hoTen: 'Nguyễn Văn B',
+        //         tuoi: 20,
+        //         diemTrungBinh: 8
+        //     },
+        //     { 
+        //         hoTen: 'Nguyễn Văn C',
+        //         tuoi: 20,
+        //         diemTrungBinh: 9
+        //     }
+        // ];
+
+        // const hoTen = danhsachsinhvien[2].hoTen;
+        // const diemTrungBinh = danhsachsinhvien[2].diemTrungBinh;
+
+        // console.log(hoTen + ' có điểm trung bình là: ' + diemTrungBinh);
+
+        // undefined
+        // let abc;
+        // console.log(abc);
+
+        // phép toán: + - * /
+
+        // const so_a = 5;
+        // const so_b = 6;
+
+        // const tinhtong = so_a + so_b;
+        // console.log(tinhtong);
+
+    </script>
+
+</body>
+
+</html>
